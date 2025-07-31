@@ -166,6 +166,7 @@ def select_best_frame(sheet, video_path, every_n_frames=5, cnnflag=False):
     else:
         print("No faces detected in the image.")
         sheet.append([date, alert_folder, "No face detected"])
+        return "No face detected"
 
 
 parentFolder = "/home/adlytic/Yasir Adlytic/Dataset/New_Alerts/"
